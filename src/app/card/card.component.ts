@@ -42,11 +42,11 @@ export class CardComponent {
   // Pie Chart Data
   public pieChartData = [
     {
-      "name": "Projects Completed",
+      "name": "Completed",
       "value": 3500
     },
     {
-      "name": "Ongoing Projects",
+      "name": "Ongoing",
       "value": 215
     }
   ];
