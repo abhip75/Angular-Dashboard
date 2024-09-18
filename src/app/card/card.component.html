@@ -1,0 +1,104 @@
+<div class="container">
+    <div class="row mt-5">
+      <!-- Card 1 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">
+              Budget
+              <i class="fa-solid fa-money-bill float-end icon-dash"></i>
+            </h5>
+            <p class="card-text fw-bold">750.90</p>
+            <p class="card-text">12 % since last month</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">
+              New Projects
+              <i class="fa-solid fa-user-group float-end icon-dash"></i>
+            </h5>
+            <p class="card-text fw-bold">215</p>
+            <p class="card-text">45 % since last month</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">
+              Total Hours
+              <i class="fa-solid fa-clock float-end icon-dash"></i>
+            </h5>
+            <p class="card-text fw-bold">1408</p>
+            <p class="card-text">55 % since last month</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 4 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">
+              Projects Completed
+              <i class="fa-solid fa-briefcase float-end icon-dash"></i>
+            </h5>
+            <p class="card-text fw-bold">3500</p>
+            <p class="card-text">70 % since last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container mt-5">
+    <!-- Charts Row -->
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <!-- Bar Chart -->
+        <div class="card card-bar">
+          <div class="card-body chart-container">
+            <ngx-charts-bar-vertical
+              [results]="barChartData"
+              [view]="view"
+              [scheme]="'vivid'"
+              [gradient]="false"
+              [xAxis]="true"
+              [yAxis]="true"
+              [legend]="true"
+              [showXAxisLabel]="true"
+              [showYAxisLabel]="true"
+              [xAxisLabel]="'Month'"
+              [yAxisLabel]="'Budget'">
+            </ngx-charts-bar-vertical>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-6 col-sm-12">
+        <!-- Pie Chart -->
+        <div class="card card-pie">
+          <div class="card-body chart-container">
+            <ngx-charts-pie-chart
+              [results]="pieChartData"
+              [view]="view"
+              [scheme]="'vivid'"
+              [legend]="true"
+              [explodeSlices]="false"
+              [doughnut]="true">
+            </ngx-charts-pie-chart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  

@@ -1,0 +1,19 @@
+.icon-dash{
+    font-size: 28px;
+    margin-top: 25px;
+}
+
+.chart-container {
+    width: 100%;
+    height: 100%;
+    overflow-x: auto; 
+    overflow-y: hidden; 
+  }
+
+  .card-bar {
+    overflow: hidden; 
+  }
+
+  .card-pie {
+    overflow: hidden; 
+  }
